@@ -7,7 +7,7 @@ export default function FirstPost() {
     <>
     <Layout>
     <Head>
-        <title>Dionysus Era Blog
+        <title>Dionysus Era Blog 
         </title>
     </Head>
     <h1>Blog Section
