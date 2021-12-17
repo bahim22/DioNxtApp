@@ -3,6 +3,21 @@ NOTES AND DOCU FOR NEXT BUILD
 "plugins": ["@babel/plugin-syntax-jsx", "@babel/plugin-syntax-flow"]
  in babel config file
  */
+/*
+export default function Home(props) { ... }
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const data = ...
+
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: ...
+  }
+} //tells next that the page invoking the func has external data
+  //that needs resolved when pg. is pre-rendered at build time
+*/
 
 /* Styles for css in js from index.js file
       <style jsx>{
