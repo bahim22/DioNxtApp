@@ -5,7 +5,7 @@ import Layout from "../../components/layout.js";
 export default function FirstPost() {
   return (
     <>
-      <Layout>
+      <Layout home>
         <Head>
           <title>Dionysus Era Blog</title>
         </Head>

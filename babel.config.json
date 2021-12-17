@@ -10,5 +10,9 @@
       }
     ]
   ],
-  "plugins": ["@babel/plugin-syntax-jsx", "@babel/plugin-syntax-flow"]
+  "plugins": [
+    "@babel/plugin-proposal-do-expressions",
+    "@babel/plugin-syntax-jsx",
+    "@babel/plugin-syntax-flow"
+  ]
 }
