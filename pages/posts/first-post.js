@@ -1,29 +1,27 @@
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 import Head from "next/head";
 import Layout from "../../components/layout.js";
 export default function FirstPost() {
-    return(
+  return (
     <>
-    <Layout>
-    <Head>
-        <title>Dionysus Era Blog 
-        </title>
-    </Head>
-    <h1>Blog Section
-    </h1>
-    <h2>
-        <Link href='/'>
+      <Layout>
+        <Head>
+          <title>Dionysus Era Blog</title>
+        </Head>
+        <h1>Blog Section</h1>
+        <h2>
+          <Link href="/">
             <a> Back to home</a>
-        </Link>
-    </h2>
-    <h3>
-        <MyImage/>
-    </h3>
-    </Layout> 
+          </Link>
+        </h2>
+        <h3>
+          <MyImage />
+        </h3>
+      </Layout>
     </>
-    )
-};
+  );
+}
 
 const MyImage = () => (
   <Image

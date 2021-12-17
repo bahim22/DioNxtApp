@@ -1,0 +1,20 @@
+node_modules
+.next
+next-env.d.ts
+yarn.lock
+package-lock.json
+public
+build
+coverage
+/build/
+/test-config/
+.vscode
+!/.*
+**/.next/*
+*.json
+*.lock
+*.css
+*.scss
+**/out/*
+next-env.d.ts
+# next.config.js
