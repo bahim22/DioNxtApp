@@ -25,9 +25,9 @@ export default function FirstPost() {
 
 const MyImage = () => (
   <Image
-    src="/images/Dedd-full.jpg" // Route of the image file
-    height={200} // Desired size with correct aspect ratio
-    width={200} // Desired size with correct aspect ratio
+    src="/img/bg.jpg" // Route of the image file
+    height={300} // Desired size with correct aspect ratio
+    width={300} // Desired size with correct aspect ratio
     alt="Dionysus Era logo"
   />
 );

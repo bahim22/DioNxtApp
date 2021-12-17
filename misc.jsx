@@ -1,11 +1,9 @@
 /*
-NOTES AND DOCU FOR NEXT BUILD
-"plugins": ["@babel/plugin-syntax-jsx", "@babel/plugin-syntax-flow"]
- in babel config file
- */
+## NOTES AND DOCU FOR NEXT BUILD
+
 /*
 export default function Home(props) { ... }
-
+// client side rendering
 export async function getStaticProps() {
   // Get external data from the file system, API, DB, etc.
   const data = ...
@@ -17,6 +15,27 @@ export async function getStaticProps() {
   }
 } //tells next that the page invoking the func has external data
   //that needs resolved when pg. is pre-rendered at build time
+*/
+
+/*
+export async function getSortedPostsData() {
+  // Instead of the file system,
+  // fetch post data from an external API endpoint
+  const res = await fetch('..')
+  return res.json()
+}
+*/
+/* //query database directly
+// getStaticProps can only be exported from a page. You can’t export it from non-page files.
+import someDatabaseSDK from 'someDatabaseSDK'
+
+const databaseClient = someDatabaseSDK.createClient(...)
+
+export async function getSortedPostsData() {
+  // Instead of the file system,
+  // fetch post data from a database
+  return databaseClient.query('SELECT posts...')
+}
 */
 
 /* Styles for css in js from index.js file
