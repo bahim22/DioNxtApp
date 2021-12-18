@@ -1,6 +1,15 @@
 /*
 ## NOTES AND DOCU FOR NEXT BUILD
+DATE INFO
+// import { parseISO } from 'date-fns'
+// Convert string '2014-02-11T11:30:30' to date:
+var result = parseISO('2014-02-11T11:30:30')
+//=> Tue Feb 11 2014 11:30:30
+//import { format } from 'date-fns'
 
+// Represent 11 February 2014 in middle-endian format:
+var result = format(new Date(2014, 1, 11), 'MM/dd/yyyy')
+//=> '02/11/2014'
 /* // if you need to fetch data at request time instead of at build time, you can try Server-side Rendering: data is fetched and html is generated on each request. you need to export getServerSideProps use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time.
 
 export async function getServerSideProps(context) {

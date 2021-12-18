@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import Link from 'next/link'
+import Date from '../components/date';
 //import { util } from 'prettier'
 
 export default function Home({ allPostsData }){
@@ -12,8 +14,8 @@ export default function Home({ allPostsData }){
       </Head>
       <section className={utilStyles.headingLg}>
         <p>Dionysus Era</p>
-        <p>Development | Design{' '}
-          <a href="https://dionysusera.business.site">Business Site</a>
+        <p>
+          Development | Design <a href="https://dionysusera.business.site">Business Site</a>
         </p>
       </section>
       <section className={'${utilStyles.headingMd} ${utilStyles.padding1px}'}>
@@ -21,15 +23,30 @@ export default function Home({ allPostsData }){
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title}
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
-        </ul>
+          </ul>
       </section>
+        <>
+          <li className={utilStyles.listItem}>
+            <li className={utilStyles.listItem}>
+              <Link href={`pages/home.js`}>
+                <a>{siteTitle}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={Date} />
+              </small>
+            </li>
+          </li>
+          </>
     </Layout>
   )
 }
