@@ -30,10 +30,10 @@ export default function Layout({ children, home }) {
                     <div>
                         <Image
                         priority
-                        src="/images/Dedd-full.jpg"
+                        src="/img/cover.jpeg"
                         className={utilStyles.borderCircle}
-                        height={144}
-                        width={144}
+                        height={300}
+                        width={300}
                         alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -46,8 +46,8 @@ export default function Layout({ children, home }) {
                         priority
                         src="/images/Fam.jpg"
                         className={utilStyles.borderCircle}
-                        height={110}
-                        width={110}
+                        height={200}
+                        width={200}
                         alt={name}
                         />
                     </a>

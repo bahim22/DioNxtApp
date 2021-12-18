@@ -1,7 +1,19 @@
 /*
 ## NOTES AND DOCU FOR NEXT BUILD
 
-/*
+/* // if you need to fetch data at request time instead of at build time, you can try Server-side Rendering: data is fetched and html is generated on each request. you need to export getServerSideProps use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time.
+
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      // props for your component
+    }
+  }
+}
+//client side rendering
+Statically generate (pre-render) parts of the page that do not require external data.
+When the page loads, fetch external data from the client using JavaScript and populate the remaining parts.
+##
 export default function Home(props) { ... }
 // client side rendering
 export async function getStaticProps() {
