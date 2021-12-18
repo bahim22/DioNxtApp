@@ -21,6 +21,7 @@ public/sitemap.xml
 /public/feed.xml
 # misc
 .DS_Store
+.env*
 
 # debug
 *.log

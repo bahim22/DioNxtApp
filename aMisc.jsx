@@ -48,8 +48,30 @@ export async function getSortedPostsData() {
   // fetch post data from a database
   return databaseClient.query('SELECT posts...')
 }
-*/
 
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2020",
+        "jsx": "preserve",
+        "checkJs": true,
+        "experimentalDecorators": true,
+        "strictFunctionTypes": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": ["components/*"],
+            "@/lib/*": ["lib/*"],
+            "@/styles/*": ["styles/*"],
+            "@/context/*": ["context/*"],
+            "@/utils/*": ["utils/*"],
+        },
+    },
+    "exclude": [
+        "node_modules",
+        "** /node_modules
+/*"
+    ]
+} */
 /* Styles for css in js from index.js file
       <style jsx>{
         .container {
