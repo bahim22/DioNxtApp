@@ -3,7 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date';
+//import Date from '../components/date';
 //import { util } from 'prettier'
 
 export default function Home({ allPostsData }){
@@ -28,14 +28,17 @@ export default function Home({ allPostsData }){
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <Date dateString={Date} />
               </small>
             </li>
           ))}
           </ul>
       </section>
-        <>
+        <ul>
           <li className={utilStyles.listItem}>
+            <Link href={`pages/base.js`}>
+                <a>Base Page</a>
+              </Link>
             <li className={utilStyles.listItem}>
               <Link href={`pages/home.js`}>
                 <a>{siteTitle}</a>
@@ -46,7 +49,7 @@ export default function Home({ allPostsData }){
               </small>
             </li>
           </li>
-          </>
+          </ul>
     </Layout>
   )
 }
