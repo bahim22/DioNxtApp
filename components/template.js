@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
-import styles from 'index.css'
-//import styles from '../components/temp.module.css'
+//import styles from 'index.css'
+//import { BsPrefixRefForwardingComponent } from 'react-bootstrap/esm/helpers'
+import styles from '../components/temp.module.css'
 //uses index.css style in app.js npm i bootstrap and reactstrap
 export default function Template() {
   return (
@@ -11,6 +12,7 @@ export default function Template() {
         <title>ReactJS with react-bootstrap</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
+
       <Container>
         <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -19,6 +21,7 @@ export default function Template() {
           Get started by editing <code>pages/index.js</code>
         </p>
         <Container>
+
           <Row className="justify-content-md-between">
             <Card className="sml-card">
               <Card.Body>
@@ -31,6 +34,7 @@ export default function Template() {
                 </Button>
               </Card.Body>
             </Card>
+
             <Card className="sml-card">
               <Card.Body>
                 <Card.Title>Learn</Card.Title>
@@ -43,6 +47,7 @@ export default function Template() {
               </Card.Body>
             </Card>
           </Row>
+
           <Row className="justify-content-md-between">
             <Card className="sml-card">
               <Card.Body>
@@ -58,6 +63,7 @@ export default function Template() {
                 </Button>
               </Card.Body>
             </Card>
+
             <Card className="sml-card">
               <Card.Body>
                 <Card.Title>Deploy</Card.Title>

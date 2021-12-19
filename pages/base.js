@@ -1,8 +1,8 @@
 //import Link from 'next/link'
 import Head from 'next/head'
-//import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-//import { useState } from 'react'
+//import styles from '../components/layout.module.css'
+//import styles from 'styles/index.css'
+//import utilStyles from '../styles/utils.module.css'
 import Layout from '../components/layout'
 import React from 'react'
 import Sidebar from '../components/sidebar'
@@ -12,15 +12,21 @@ import Content from '../components/content'
 
 export default function Base() {
      return (
-      <>
-        <Head />
-        <Layout />
+      <main class='.main'>
+        <Head>
+          <title>About Page Dio</title>
+        </Head>
+        <Layout base/>
         <Sidebar />
-        <Content />
-        <main className={utilStyles.headingLg}>
+        <Content base/>
+        <div class='.grid'>
+          <article class='.main'>
           Base Page to test new compo
-        </main>
-       </>
+          <hr />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum consectetur odit? Excepturi tempore ipsam iusto ex officiis error autem nam, laborum, asperiores, sit amet corporis esse inventore necessitatibus quis.
+          </article>
+        </div>
+       </main>
      )
 }
 

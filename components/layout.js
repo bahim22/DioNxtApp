@@ -3,13 +3,14 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { Main } from 'next/document'
 
-const name = "Ibrahima Balde"
+const name = "DedNext Project"
 export const siteTitle = "Next Dionysus Era"
 
 export default function Layout({ children, home }){
     return (
-      <>
+      <div className={utilStyles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -20,13 +21,13 @@ export default function Layout({ children, home }){
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <section className={styles.header}>
+        <section className={styles.container}>
           {home ? (
             <>
               <Image
                 priority
                 src="/img/cover.jpeg"
-                className={utilStyles.borderCircle}
+                className={utilStyles.flex}
                 height={300}
                 width={300}
                 alt={name}
@@ -35,12 +36,12 @@ export default function Layout({ children, home }){
             </>
           ) : (
             <>
-              <Link href="/">
+              <Link href="/">Main Page
                 <a>
                   <Image
                     priority
                     src="/images/Fam.jpg"
-                    className={utilStyles.borderCircle}
+                    className={utilStyles.flex}
                     height={200}
                     width={200}
                     alt={name}
@@ -48,8 +49,8 @@ export default function Layout({ children, home }){
                 </a>
               </Link>
               <h2 className={utilStyles.headingLg}>
-                <Link href="/">
-                  <a className={utilStyles.colorInherit}>{name}</a>
+                <Link href="/base">
+                  <a className={utilStyles.colorInherit}>Base Page</a>
                 </Link>
               </h2>
             </>
@@ -58,11 +59,11 @@ export default function Layout({ children, home }){
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
-            <Link href="/">
+            <Link href="/home">
               <a>Home</a>
             </Link>
           </div>
         )}
-      </>
+      </div>
       )
     };

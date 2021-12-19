@@ -10,8 +10,13 @@ export default function Date({ dateString }) {
 
 export default function Date({ dateString }) {
   const date = parseISO(dateString)
-  return <time dateTime={'2021, 12, 22'}>format(Date{'1992, 12, 12', 'LLLL, d, yyyy'})</time>
-}
+  return (
+    <time dateTime={'2021, 12, 22'}>
+      {format(Date('1992, 12, 12'), 'LLLL, d, yyyy')}
+    </time>
+  )
+};
+
 /*export function ADate ({ dateString }) {
   const date = parseISO(dateString)
   return(

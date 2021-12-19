@@ -4,12 +4,13 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Sidebar from '../components/sidebar'
 //import { util } from 'prettier'
 
 export default function Index({ allPostsData }){
   return (
-    <>
-      <Layout />
+    <container className='.body'>
+      <Layout index/>
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -19,8 +20,10 @@ export default function Index({ allPostsData }){
           <meta name="og:title" content={indexTitle} />
           <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <section className={utilStyles.headingLg}>
-        <p>Dionysus Era</p>
+      <Sidebar />
+      <Content index/>
+      <section className={utilStyles.container}>
+        <p className='headingLg'>Dionysus Era</p>
         <p>
           Development | Design <a href="https://dionysusera.business.site">Business Site</a>
         </p>
@@ -43,11 +46,11 @@ export default function Index({ allPostsData }){
       </section>
         <ul>
           <li className={utilStyles.listItem}>
-            <Link href={`pages/base.js`}>
+            <Link href={`pages/base`}>
                 <a>Base Page</a>
               </Link>
             <li className={utilStyles.listItem}>
-              <Link href={`pages/home.js`}>
+              <Link href={`pages/home`}>
                 <a>{siteTitle}</a>
               </Link>
               <br />
@@ -57,7 +60,7 @@ export default function Index({ allPostsData }){
             </li>
           </li>
           </ul>
-    </>
+    </container>
   )
 }
 

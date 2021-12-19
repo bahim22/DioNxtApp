@@ -30,8 +30,9 @@ export default function Content({children}) {
             </ul>
         </section>
 
-        <body>
-        <h2 className="text-3xl font-bold underline">Dionysus Era Base
+        <section class='.container'>
+        <h2 class="text-3xl text-center font-bold underline">
+        Dionysus Era Base
         </h2>
         <Image
             priority
@@ -51,16 +52,16 @@ export default function Content({children}) {
             alt={name}
             />
         <CImage />
-        <div className=".container">
-        {AImage}
-        </div>
-        <div>
-        {BImage}
-        </div>
-        <div>
-            <AImage />
-        </div>
-        </body>
+          <div class=".card">
+            {AImage}
+          </div>
+          <div class=".container">
+            {BImage}
+          </div>
+          <div class=".container">
+              <AImage />
+          </div>
+        </section>
         </>
     )
 }
