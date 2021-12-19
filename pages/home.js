@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Layout from "../components/layout.js";
-import Aside from "../components/content.js";
-//import styles from './layout.module.css'
+//import styles from '*.module.css'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Home() {
@@ -22,10 +21,10 @@ export default function Home() {
           </Link>
         </h2>
 
-      <body className={utilStyles.body}>
+      <div className={utilStyles.header}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum quas atque, omnis sapiente quia consequuntur incidunt, provident obcaecati commodi ex. Adipisci, officia aspernatur nobis odit odio quos saepe! Fugit?
-      </body>
-      <main className={styles.main}>{children}</main>
+      </div>
+      <main className={utilStyles.main}>Cora </main>
         <h3>
           <MyImage />
           <MImage />

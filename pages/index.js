@@ -3,22 +3,18 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date';
+import Date from '../components/date'
 //import { util } from 'prettier'
 
 export default function Index({ allPostsData }){
   return (
-    <Layout>
-    <Layout children={Index} />
+    <>
+      <Layout />
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
             content="Full stack website made with Next.js, React.js, JSX, Css Modules. Dionysus Era next.js website"
-          />
-          <meta
-            property="og:image"
-            content={}
           />
           <meta name="og:title" content={indexTitle} />
           <meta name="twitter:card" content="summary_large_image" />
@@ -61,7 +57,7 @@ export default function Index({ allPostsData }){
             </li>
           </li>
           </ul>
-    </Layout>
+    </>
   )
 }
 

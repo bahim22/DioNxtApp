@@ -8,16 +8,16 @@ export default function Date({ dateString }) {
     )}
 */
 
-/*export default function Date({ dateString }) {
+export default function Date({ dateString }) {
   const date = parseISO(dateString)
-  return <time dateTime={'2021, 12, 22'}>{format(date, 'LLLL d, yyyy')}</time>
-}*/
-export function Date ({ dateString }) {
+  return <time dateTime={'2021, 12, 22'}>format(Date{'1992, 12, 12', 'LLLL, d, yyyy'})</time>
+}
+/*export function ADate ({ dateString }) {
   const date = parseISO(dateString)
   return(
-   <div dateTime={'2021, 12, 12'}>{format(Date,'MM/dd/yyyy')}</div>
+   <div dateTime={'2021, 12, 12'}>{format(Date,'2021, 12, 12', 'MM/dd/yyyy')}</div>
   )
-}
+}*/
 
 //const getLocale = (locale) => import(`date-fns/locale/${locale}/index.js`) // or require() if using CommonJS
 

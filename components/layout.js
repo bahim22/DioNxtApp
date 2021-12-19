@@ -16,10 +16,6 @@ export default function Layout({ children, home }){
             name="description"
             content="Full stack website made with Next.js, React.js, JSX, Css Modules. Dionysus Era next.js website"
           />
-          <meta
-            property="og:image"
-            content={}
-          />
           <meta charSet="utf-8" />
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />

@@ -3,7 +3,7 @@ import Head from 'next/head'
 //import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 //import { useState } from 'react'
-//import Layout from '../components/layout'
+import Layout from '../components/layout'
 import React from 'react'
 import Sidebar from '../components/sidebar'
 import Content from '../components/content'
@@ -14,6 +14,7 @@ export default function Base() {
      return (
       <>
         <Head />
+        <Layout />
         <Sidebar />
         <Content />
         <main className={utilStyles.headingLg}>

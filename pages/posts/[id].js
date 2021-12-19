@@ -3,7 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css';
-import Template from '../../components/template';
+import Layout from '../../components/layout';
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
@@ -23,7 +23,8 @@ export async function getStaticProps({ params }){
 
 export default function Post({ postData }) {
   return (
-    <Template>
+    <>
+    <Layout />
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -34,6 +35,6 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Template>
+    </>
   )
 }

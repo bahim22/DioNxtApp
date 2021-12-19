@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
-import styles from '*.module.css'
-import styles from '../components/temp.module.css'
+import styles from 'index.css'
+//import styles from '../components/temp.module.css'
 //uses index.css style in app.js npm i bootstrap and reactstrap
 export default function Template() {
   return (
+    <>
     <Container className="md-container">
       <Head>
         <title>ReactJS with react-bootstrap</title>
@@ -87,5 +88,6 @@ export default function Template() {
         </a>
       </footer>
     </Container>
+    </>
   )
 }
