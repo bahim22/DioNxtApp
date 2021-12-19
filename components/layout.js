@@ -10,7 +10,7 @@ export const siteTitle = "Next Dionysus Era"
 
 export default function Layout({ children, home }){
     return (
-      <div className={utilStyles.container}>
+      <div className='.grid'>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -21,7 +21,7 @@ export default function Layout({ children, home }){
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <section className={styles.container}>
+        <section className={styles.flex}>
           {home ? (
             <>
               <Image
@@ -36,8 +36,7 @@ export default function Layout({ children, home }){
             </>
           ) : (
             <>
-              <Link href="/">Main Page
-                <a>
+              <Link href="/">
                   <Image
                     priority
                     src="/images/Fam.jpg"
@@ -46,7 +45,6 @@ export default function Layout({ children, home }){
                     width={200}
                     alt={name}
                   />
-                </a>
               </Link>
               <h2 className={utilStyles.headingLg}>
                 <Link href="/base">

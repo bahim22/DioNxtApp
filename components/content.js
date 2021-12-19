@@ -10,10 +10,10 @@ import utilStyles from '../styles/utils.module.css'
 
 
 //top half of the body section of each page to be passed props to change depending on what page it's called in. need to add styles and tailwind. has pics, cards w/ pic and text
-export default function Content({children}) {
+export default function Content() {
     return (
       <>
-        <section className={utilStyles.flex}>
+        <section className={utilStyles.grid}>
         <h1 className={utilStyles.headingLg}>
           Content function
         </h1>
@@ -30,14 +30,14 @@ export default function Content({children}) {
             </ul>
         </section>
 
-        <section class='.container'>
-        <h2 class="text-3xl text-center font-bold underline">
+        <section class='.flex'>
+        <h2 class="text-center font-bold underline">
         Dionysus Era Base
         </h2>
         <Image
             priority
             src="/img/bg7.jpg"
-            className={utilStyles.container}
+            className={utilStyles.flex}
             height={200}
             width={200}
             alt={name}
@@ -46,7 +46,7 @@ export default function Content({children}) {
         <Image
             priority
             src="/img/bg7.jpg"
-            className={utilStyles.container}
+            className={utilStyles.flex}
             height={200}
             width={200}
             alt={name}
@@ -55,10 +55,10 @@ export default function Content({children}) {
           <div class=".card">
             {AImage}
           </div>
-          <div class=".container">
+          <div class=".card">
             {BImage}
           </div>
-          <div class=".container">
+          <div class=".card">
               <AImage />
           </div>
         </section>

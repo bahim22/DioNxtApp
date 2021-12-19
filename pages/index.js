@@ -4,13 +4,14 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-import Sidebar from '../components/sidebar'
+//import Sidebar from '../components/sidebar'
+import Content from '../components/content'
+import React from 'react'
 //import { util } from 'prettier'
 
 export default function Index({ allPostsData }){
   return (
-    <container className='.body'>
-      <Layout index/>
+    <main class='.main'>
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -20,8 +21,6 @@ export default function Index({ allPostsData }){
           <meta name="og:title" content={indexTitle} />
           <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Sidebar />
-      <Content index/>
       <section className={utilStyles.container}>
         <p className='headingLg'>Dionysus Era</p>
         <p>
@@ -60,7 +59,9 @@ export default function Index({ allPostsData }){
             </li>
           </li>
           </ul>
-    </container>
+      <Layout index/>
+      <Content />
+    </main>
   )
 }
 

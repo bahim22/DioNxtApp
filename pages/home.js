@@ -1,27 +1,26 @@
-import Link from "next/link";
+//import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Layout from "../components/layout.js";
 //import styles from '*.module.css'
 import utilStyles from '../styles/utils.module.css'
-import Sidebar from "../components/sidebar.js";
+//import Sidebar from "../components/sidebar.js";
+import Content from '../components/content'
+import React from "react";
 
 export default function Home() {
   return (
-    <main className={utilStyles.container}>
-      <Layout home/>
+    <main className=".main">
       <Head>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta name="og:title" content="About Home Page" key='title' />
       </Head>
-      <Sidebar />
-      <Content home/>
+      <Layout home/>
+      <Content />
       <section className={utilStyles.flex}>
       <h1 className={utilStyles.heading2Xl}>Blog Section</h1>
         <h2 className={utilStyles.headingXl}>
-          <Link href="/">
-            <a> Back to Landing Page</a>
-          </Link>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro quis saepe.</p>
         </h2>
       </section>
       <div className={utilStyles.card}>

@@ -82,7 +82,40 @@ export default function Template() {
           </Row>
         </Container>
       </Container>
-
+              <Container>
+        <Carousel>
+        <CarouselItem>
+            <Image
+            layout='responsive'
+            src="/img/bg7.jpg"
+            className={utilStyles.flex}
+            height={200}
+            width={200}
+            alt='Nx Next Preview'
+            />
+        </CarouselItem>
+        <CarouselItem>
+            <Image
+            layout='responsive'
+            src="/img/bg7.jpg"
+            className={utilStyles.flex}
+            height={200}
+            width={200}
+            alt='Django preview'
+            />
+        </CarouselItem>
+        <CarouselItem>
+            <Image
+            layout='responsive'
+            src="/img/bg7.jpg"
+            className={utilStyles.flex}
+            height={200}
+            width={200}
+            alt='React Preview'
+            />
+        </CarouselItem>
+        </Carousel>
+        </Container>
       <footer className="cntr-footer">
         <a
           href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"

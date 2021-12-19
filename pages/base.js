@@ -5,7 +5,7 @@ import Head from 'next/head'
 //import utilStyles from '../styles/utils.module.css'
 import Layout from '../components/layout'
 import React from 'react'
-import Sidebar from '../components/sidebar'
+//import Sidebar from '../components/sidebar'
 import Content from '../components/content'
 
 //const baseTitle = "DED Base"
@@ -17,10 +17,9 @@ export default function Base() {
           <title>About Page Dio</title>
         </Head>
         <Layout base/>
-        <Sidebar />
-        <Content base/>
+        <Content />
         <div class='.grid'>
-          <article class='.main'>
+          <article class='.p'>
           Base Page to test new compo
           <hr />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum consectetur odit? Excepturi tempore ipsam iusto ex officiis error autem nam, laborum, asperiores, sit amet corporis esse inventore necessitatibus quis.
