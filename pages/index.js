@@ -6,11 +6,22 @@ import Link from 'next/link'
 //import Date from '../components/date';
 //import { util } from 'prettier'
 
-export default function Home({ allPostsData }){
+export default function Index({ allPostsData }){
   return (
-    <Layout home>
+    <>
+    <Layout children={Index} />
       <Head>
-        <title>{siteTitle}</title>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="Full stack website made with Next.js, React.js, JSX, Css Modules. Dionysus Era next.js website"
+          />
+          <meta
+            property="og:image"
+            content={}
+          />
+          <meta name="og:title" content={indexTitle} />
+          <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section className={utilStyles.headingLg}>
         <p>Dionysus Era</p>
@@ -50,10 +61,11 @@ export default function Home({ allPostsData }){
             </li>
           </li>
           </ul>
-    </Layout>
+    </>
   )
 }
 
+const indexTitle = 'Dionysus Blog Home Page'
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
