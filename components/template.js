@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
+import styles from '*.module.css'
+import styles from '../components/temp.module.css'
 //uses index.css style in app.js npm i bootstrap and reactstrap
 export default function Template() {
   return (

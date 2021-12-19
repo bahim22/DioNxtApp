@@ -1,4 +1,4 @@
-import Link from 'next/link'
+//import Link from 'next/link'
 import Head from 'next/head'
 //import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
@@ -6,6 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 //import Layout from '../components/layout'
 import React from 'react'
 import Sidebar from '../components/sidebar'
+import Content from '../components/content'
 
 //const baseTitle = "DED Base"
 

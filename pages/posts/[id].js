@@ -1,8 +1,9 @@
-import Layout from '../../components/layout'
+//import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css';
+import Template from '../../components/template';
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
@@ -22,7 +23,7 @@ export async function getStaticProps({ params }){
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <Template>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -33,6 +34,6 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </Template>
   )
 }

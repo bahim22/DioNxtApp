@@ -9,8 +9,7 @@ import utilStyles from '../styles/utils.module.css'
 export default function Home() {
   return (
     <>
-      <Layout home />
-      <Aside />
+      <Layout />
       <Head>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta name="og:title" content="About Home Page" key='title' />
