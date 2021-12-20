@@ -7,11 +7,12 @@ import Date from '../components/date'
 //import Sidebar from '../components/sidebar'
 import Content from '../components/content'
 import React from 'react'
+import { util } from 'prettier'
 //import { util } from 'prettier'
 
 export default function Index({ allPostsData }){
   return (
-    <main class='.main'>
+    <main className={utilStyles.container}>
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -21,7 +22,7 @@ export default function Index({ allPostsData }){
           <meta name="og:title" content={indexTitle} />
           <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <section className={utilStyles.container}>
+      <section className={utilStyles.main}>
         <p className='headingLg'>Dionysus Era</p>
         <p>
           Development | Design <a href="https://dionysusera.business.site">Business Site</a>
@@ -59,7 +60,7 @@ export default function Index({ allPostsData }){
             </li>
           </li>
           </ul>
-      <Layout index/>
+      <Layout />
       <Content />
     </main>
   )

@@ -1,9 +1,10 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 import Link from 'next/link'
-import { Carousel, CarouselItem, Container, ListGroup, ListGroupItem, Navbar, NavDropdown, NavItem, Row } from 'react-bootstrap'
-import utilStyles from '../styles/utils.module.css'
+import { ListGroup, ListGroupItem, Navbar, NavDropdown, NavItem, Row } from 'react-bootstrap'
+//import utilStyles from '../styles/utils.module.css'
 //import styles from './layout.module.css'
 import React from 'react'
+import Template from './template'
 //import {BsPrefixRefForwardingComponent} from 'react-bootstrap/esm/helpers'
 
 export default function Sidebar() {
@@ -34,6 +35,7 @@ export default function Sidebar() {
                 </NavItem>
             </NavDropdown>
         </Navbar>
+        <Template />
     </main>
   )
 }

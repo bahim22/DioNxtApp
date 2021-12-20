@@ -5,6 +5,7 @@ import React from 'react'
 import Image from 'next/image'
 //import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
+//import { util } from 'prettier'
 //import Link from 'next/link'
 //import { Main } from 'next/document'
 
@@ -12,12 +13,12 @@ import utilStyles from '../styles/utils.module.css'
 //top half of the body section of each page to be passed props to change depending on what page it's called in. need to add styles and tailwind. has pics, cards w/ pic and text
 export default function Content() {
     return (
-      <>
-        <section className={utilStyles.grid}>
+      <div className={utilStyles.container}>
+        <section className={utilStyles.main}>
         <h1 className={utilStyles.headingLg}>
-          Content function
+          Dio Era Dev | Design
         </h1>
-            <ul className={utilStyles.list}>
+            <ul className={utilStyles.flex}>
                 <li className={utilStyles.listItem}>
                     <MImage /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, expedita. Beatae necessitatibus numquam molestiae autem, dolore laudantium eveniet et eos iste, exercitationem reprehenderit voluptatem, facilis aut ratione cupiditate accusamus reiciendis.
                 </li>
@@ -30,14 +31,14 @@ export default function Content() {
             </ul>
         </section>
 
-        <section class='.flex'>
-        <h2 class="text-center font-bold underline">
+        <section className={utilStyles.main}>
+        <h2 className={utilStyles.headingMd}>
         Dionysus Era Base
         </h2>
         <Image
             priority
             src="/img/bg7.jpg"
-            className={utilStyles.flex}
+            className={utilStyles.card}
             height={200}
             width={200}
             alt={name}
@@ -46,23 +47,23 @@ export default function Content() {
         <Image
             priority
             src="/img/bg7.jpg"
-            className={utilStyles.flex}
+            className={utilStyles.card}
             height={200}
             width={200}
             alt={name}
             />
         <CImage />
-          <div class=".card">
-            {AImage}
+          <div className={utilStyles.card}>
+            <MImage />
           </div>
-          <div class=".card">
-            {BImage}
+          <div className={utilStyles.card}>
+            <BImage />
           </div>
-          <div class=".card">
+          <div className={utilStyles.card}>
               <AImage />
           </div>
         </section>
-        </>
+        </div>
     )
 }
 

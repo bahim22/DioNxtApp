@@ -10,11 +10,11 @@ export default function Date({ dateString }) {
 
 export default function Date({ dateString }) {
   const date = parseISO(dateString)
-  return (
-   <time dateTime={dateString}>format(date('2021, 12, 12'), 'MM, d, yyyy')</time>
-  )}
+  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>
+  }
 
-/*export function ADate ({ dateString }) {
+/*
+export function ADate ({ dateString }) {
   const date = parseISO(dateString)
   return(
    <div dateTime={'2021, 12, 12'}>{format(Date,'2021, 12, 12', 'MM/dd/yyyy')}</div>

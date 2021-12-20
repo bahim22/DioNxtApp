@@ -10,24 +10,24 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className=".main">
+    <main className={utilStyles.container}>
       <Head>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta name="og:title" content="About Home Page" key='title' />
       </Head>
-      <Layout home/>
+      <Layout />
       <Content />
-      <section className={utilStyles.flex}>
+      <section className={utilStyles.main}>
       <h1 className={utilStyles.heading2Xl}>Blog Section</h1>
         <h2 className={utilStyles.headingXl}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro quis saepe.</p>
         </h2>
       </section>
-      <div className={utilStyles.card}>
-        <article className={utilStyles.grid}>
+      <div className={utilStyles.grid}>
+        <article className={utilStyles.card}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum quas atque, omnis sapiente quia consequuntur incidunt, provident obcaecati commodi ex. Adipisci, officia aspernatur nobis odit odio quos saepe! Fugit?
         </article>
-        <article className={utilStyles.grid}>
+        <article className={utilStyles.card}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore voluptatum minus fuga impedit, dolorum tenetur quibusdam tempore, voluptates a aliquam et omnis, quasi qui quae laudantium animi dolores ratione est!
         </article>
       </div>

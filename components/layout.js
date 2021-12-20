@@ -3,14 +3,14 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import { Main } from 'next/document'
+//import { Main } from 'next/document'
 
 const name = "DedNext Project"
 export const siteTitle = "Next Dionysus Era"
 
 export default function Layout({ children, home }){
     return (
-      <div className='.grid'>
+      <div className='.container'>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -21,7 +21,7 @@ export default function Layout({ children, home }){
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <section className={styles.flex}>
+        <section className={styles.main}>
           {home ? (
             <>
               <Image
@@ -48,7 +48,7 @@ export default function Layout({ children, home }){
               </Link>
               <h2 className={utilStyles.headingLg}>
                 <Link href="/base">
-                  <a className={utilStyles.colorInherit}>Base Page</a>
+                  <a className={utilStyles.a}>Base Page</a>
                 </Link>
               </h2>
             </>

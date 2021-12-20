@@ -22,7 +22,7 @@ export async function getStaticProps({ params }){
 
 export default function Post({ postData }) {
   return (
-    <>
+    <div className={utilStyles.container}>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -33,7 +33,7 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
-      <Layout post/>
-    </>
+      <Layout />
+    </div>
   )
 }

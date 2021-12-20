@@ -1,7 +1,7 @@
 //import Link from 'next/link'
 import Head from 'next/head'
 //import styles from '../components/layout.module.css'
-//import styles from 'styles/index.css'
+import styles from 'styles/index.css'
 //import utilStyles from '../styles/utils.module.css'
 import Layout from '../components/layout'
 import React from 'react'
@@ -16,7 +16,7 @@ export default function Base() {
         <Head>
           <title>About Page Dio</title>
         </Head>
-        <Layout base/>
+        <Layout />
         <Content />
         <div class='.grid'>
           <article class='.p'>
