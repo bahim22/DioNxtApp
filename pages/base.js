@@ -1,7 +1,7 @@
 //import Link from 'next/link'
 import Head from 'next/head'
 //import styles from '../components/layout.module.css'
-import styles from 'styles/index.css'
+//import styles from 'styles/index.css'
 //import utilStyles from '../styles/utils.module.css'
 import Layout from '../components/layout'
 import React from 'react'
@@ -12,20 +12,20 @@ import Content from '../components/content'
 
 export default function Base() {
      return (
-      <main class='.main'>
+      <div>
         <Head>
           <title>About Page Dio</title>
         </Head>
         <Layout />
         <Content />
-        <div class='.grid'>
-          <article class='.p'>
+        <div class='.card'>
+          <article>
           Base Page to test new compo
           <hr />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum consectetur odit? Excepturi tempore ipsam iusto ex officiis error autem nam, laborum, asperiores, sit amet corporis esse inventore necessitatibus quis.
           </article>
         </div>
-       </main>
+       </div>
      )
 }
 
