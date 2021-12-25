@@ -1,18 +1,14 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-//import Sidebar from '../components/sidebar'
-import Content from '../components/content'
 import React from 'react'
-import { util } from 'prettier'
 //import { util } from 'prettier'
 
 export default function Index({ allPostsData }){
   return (
-    <main className={utilStyles.container}>
+    <main>
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -22,7 +18,7 @@ export default function Index({ allPostsData }){
           <meta name="og:title" content={indexTitle} />
           <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <section className={utilStyles.main}>
+      <section>
         <p className='headingLg'>Dionysus Era</p>
         <p>
           Development | Design <a href="https://dionysusera.business.site">Business Site</a>
@@ -59,13 +55,11 @@ export default function Index({ allPostsData }){
               </small>
             </li>
           </li>
-          </ul>
-      <Layout />
-      <Content />
+        </ul>
     </main>
   )
 }
-
+const siteTitle = 'Dionysus Main Landing'
 const indexTitle = 'Dionysus Blog Home Page'
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()

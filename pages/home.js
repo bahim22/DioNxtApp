@@ -7,6 +7,8 @@ import utilStyles from '../styles/utils.module.css'
 //import Sidebar from "../components/sidebar.js";
 import Content from '../components/content'
 import React from "react";
+//import NavTopOff from "../components/navi.js";
+import Footer from "../components/foot.js";
 
 export default function Home() {
   return (
@@ -35,6 +37,9 @@ export default function Home() {
         <MImage />
         <MyImage />
         <MImage />
+        <div className="utilStyles.card">
+          <Footer />
+        </div>
       </main>
   );
 }
