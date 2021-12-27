@@ -9,7 +9,7 @@ import React from 'react'
 export default function NavTopOff() {
   return (
 <>
-<Navbar bg="light" expand={false}>
+<Navbar bg="light" expand={true}>
   <Container fluid>
     <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
     <Navbar.Toggle aria-controls="offcanvasNavbar" />

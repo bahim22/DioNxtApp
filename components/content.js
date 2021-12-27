@@ -19,49 +19,16 @@ export default function Content() {
           Dio Era Dev | Design
         </h1>
             <ul className={utilStyles.flex}>
+                <MImage />
                 <li className={utilStyles.listItem}>
-                    <MImage /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, expedita. Beatae necessitatibus numquam molestiae autem, dolore laudantium eveniet et eos iste, exercitationem reprehenderit voluptatem, facilis aut ratione cupiditate accusamus reiciendis.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate optio exercitationem ratione eos illo minima beatae velit nam odit praesentium minus fugit nihil, expedita aliquam accusamus modi molestiae mollitia!
                 </li>
+                <WImage />
                 <li className={utilStyles.listItem}>
-                    <WImage /> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate optio exercitationem ratione eos illo minima beatae velit nam odit praesentium minus fugit nihil, expedita aliquam accusamus modi molestiae mollitia!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, numquam accusamus aspernatur veritatis facere qui. Eaque iusto aspernatur reiciendis cumque, fuga at et exercitationem eos odit asperiores quasi rem! Fugit!
                 </li>
-                <li className={utilStyles.listItem}>
-                    <MyImage /> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, numquam accusamus aspernatur veritatis facere qui. Eaque iusto aspernatur reiciendis cumque, fuga at et exercitationem eos odit asperiores quasi rem! Fugit!
-                </li>
+                <MyImage />
             </ul>
-        </section>
-
-        <section className={utilStyles.main}>
-        <h2 className={utilStyles.headingMd}>
-        Dionysus Era Base
-        </h2>
-        <Image
-            priority
-            src="/img/bg7.jpg"
-            className={utilStyles.card}
-            height={200}
-            width={200}
-            alt={name}
-            />
-
-        <Image
-            priority
-            src="/img/bg7.jpg"
-            className={utilStyles.card}
-            height={200}
-            width={200}
-            alt={name}
-            />
-        <CImage />
-          <div className={utilStyles.card}>
-            <MImage />
-          </div>
-          <div className={utilStyles.card}>
-            <BImage />
-          </div>
-          <div className={utilStyles.card}>
-              <AImage />
-          </div>
         </section>
         </div>
     )

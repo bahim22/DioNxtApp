@@ -41,20 +41,15 @@ export default function Index({ allPostsData }){
           </ul>
       </section>
         <ul>
-          <li className={utilStyles.listItem}>
-            <Link href={`pages/base`}>
-                <a>Base Page</a>
-              </Link>
             <li className={utilStyles.listItem}>
-              <Link href={`pages/home`}>
+              <Link href={`/home`}>
                 <a>{siteTitle}</a>
               </Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={Date} />
               </small>
-            </li>
-          </li>
+                </li>
         </ul>
     </main>
   )

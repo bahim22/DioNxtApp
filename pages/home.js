@@ -17,13 +17,9 @@ export default function Home() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta name="og:title" content="About Home Page" key='title' />
       </Head>
-      <Layout />
-      <Content />
       <section className={utilStyles.main}>
-      <h1 className={utilStyles.heading2Xl}>Blog Section</h1>
-        <h2 className={utilStyles.headingXl}>
+      <h1 className={utilStyles.heading2Xl}>Dionysus Era</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro quis saepe.</p>
-        </h2>
       </section>
       <div className={utilStyles.grid}>
         <article className={utilStyles.card}>
@@ -35,10 +31,8 @@ export default function Home() {
       </div>
         <MyImage />
         <MImage />
-        <MyImage />
-        <MImage />
         <div className="utilStyles.card">
-          <Footer />
+        <Content />
         </div>
       </main>
   );
@@ -60,13 +54,3 @@ const MImage = () => (
     alt="Dionysus Era logo"
   />
 );
-
-/*Home.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      <Sidebar />
-      <Content />
-      {page}
-    </Layout>
-  )
-}*/

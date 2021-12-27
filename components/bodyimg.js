@@ -12,11 +12,11 @@ export default function BdImg() {
         </h1>
             <ul className={utilStyles.flex}>
                 <li className={utilStyles.listItem}>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, expedita. Beatae necessitatibus numquam molestiae autem, dolore laudantium eveniet
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, expedita. Beatae necessitatibus numquam molestiae autem, dolore laudantium eveniet
                 </li>
                 <MyImage />
                 <li className={utilStyles.listItem}>
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate optio exercitationem ratione eos.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate optio exercitationem ratione eos.
                 </li>
                 <MImage />
                 <li className={utilStyles.listItem}>
