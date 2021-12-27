@@ -38,7 +38,7 @@ export default function Layout({ children, home }){
               <Link href="/">
                   <Image
                     priority
-                    src="/images/Fam.jpg"
+                    src="public/images/Fam.JPG"
                     className={utilStyles.card}
                     height={200}
                     width={200}
