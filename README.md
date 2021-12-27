@@ -1,14 +1,21 @@
 
 # Main Landing Page for Dionysus Era Dev & Design
 
-## Includes blog
+|__________________________________________________|
 
-- Template
-- Info about how I build Next app
-- component structure
-- css design structure
+| **DioNextApp** | _Hima Balde_ | **Dionysus Era**
 
-### Api with lambda function for severless functions
+## Blog
 
-- top down build info
-- api structure
+- `Template`
+  -   top-down
+- `Blog Posts`
+  - component structure
+  - css design structure
+  - next app structure
+  - resources used
+- `Add API`
+- `Add external Links`
+
+### Deployed to Vercel @ https://dio-nxt-app.vercel.app/
+
