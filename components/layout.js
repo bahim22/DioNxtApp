@@ -25,7 +25,7 @@ export default function Layout({ children, home }){
             <>
               <Image
                 priority
-                src="/img/cover.jpeg"
+                src="/img/bg4.jpg"
                 className={utilStyles.card}
                 height={300}
                 width={300}
@@ -46,21 +46,20 @@ export default function Layout({ children, home }){
                   />
               </Link>
               <h2 className={utilStyles.headingLg}>
-                <Link href="/base">
-                  <a className={utilStyles.a}>Base Page</a>
+                <Link href="/">
+                  <a className={utilStyles.a}>Home Page</a>
                 </Link>
               </h2>
             </>
           )}
-        </section>
         <main>{children}</main>
         {!home && (
-          <div className={styles.backToHome}>
+          <div>
             <Link href="/home">
-              <a>Home</a>
+              <a>Dionysus Era Main</a>
             </Link>
           </div>
-        )}
+        )}</section>
       </div>
       )
     };

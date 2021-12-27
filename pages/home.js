@@ -19,15 +19,15 @@ export default function Home() {
       </Head>
       <section className={utilStyles.main}>
       <h1 className={utilStyles.heading2Xl}>Dionysus Era</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro quis saepe.</p>
+            <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro quis saepe.</a>
       </section>
       <div className={utilStyles.grid}>
-        <article className={utilStyles.card}>
+        <a className={utilStyles.card}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum quas atque, omnis sapiente quia consequuntur incidunt, provident obcaecati commodi ex. Adipisci, officia aspernatur nobis odit odio quos saepe! Fugit?
-        </article>
-        <article className={utilStyles.card}>
+        </a>
+        <a className={utilStyles.card}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore voluptatum minus fuga impedit, dolorum tenetur quibusdam tempore, voluptates a aliquam et omnis, quasi qui quae laudantium animi dolores ratione est!
-        </article>
+        </a>
       </div>
         <MyImage />
         <MImage />

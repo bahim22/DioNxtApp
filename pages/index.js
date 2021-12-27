@@ -19,10 +19,10 @@ export default function Index({ allPostsData }){
           <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section>
-        <p className='headingLg'>Dionysus Era</p>
-        <p>
-          Development | Design <a href="https://dionysusera.business.site">Business Site</a>
-        </p>
+        <a className='headingLg'>Dionysus Era</a>< hr />
+        <a>
+          Development | Design <p href="https://dionysusera.business.site">Business Site</p>
+        </a>
       </section>
       <section className={'${utilStyles.headingMd} ${utilStyles.padding1px}'}>
         <h2 className={utilStyles.headingLg}> DioBlog</h2>
@@ -40,17 +40,13 @@ export default function Index({ allPostsData }){
           ))}
           </ul>
       </section>
-        <ul>
-            <li className={utilStyles.listItem}>
+        <div>
+            <a className={utilStyles.listItem}>
               <Link href={`/home`}>
-                <a>{siteTitle}</a>
+                <p>{siteTitle}</p>
               </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={Date} />
-              </small>
-                </li>
-        </ul>
+                </a>
+        </div>
     </main>
   )
 }

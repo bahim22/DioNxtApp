@@ -1,5 +1,5 @@
 ---
-title: 'Static Generation v. Server-side Rendering'
+title: 'Static v. Server-side Rendering'
 date: '2021-11-12'
 ---
 
