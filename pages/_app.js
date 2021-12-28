@@ -1,5 +1,5 @@
 import '../styles/global.css'
-//import '../style/index.css'
+import '../styles/index.css'
 //use with index.css and template.js (using react w bootstrap ) npm needs install bootstrap and react-bootstrap
 
 export default function App({ Component, pageProps }) {

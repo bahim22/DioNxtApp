@@ -23,14 +23,16 @@ export default function Layout({ children, home }){
         <section className={styles.container}>
           {home ? (
             <>
-              <Image
-                priority
-                src="/images/landing-bg.jpg"
-                className={utilStyles.card}
-                height={300}
-                width={300}
-                alt={name}
-              />
+              <Link href='/'>
+                <Image
+                  priority
+                  src="/images/Dedd.jpg"
+                  className={utilStyles.card}
+                  height={300}
+                  width={300}
+                  alt={name}
+                />
+              </Link>
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </>
           ) : (
@@ -47,7 +49,7 @@ export default function Layout({ children, home }){
               </Link>
               <h2 className={utilStyles.headingLg}>
                 <Link href="/">
-                  <a className='align-self-center'>Home Page</a>
+                  <a>Home Page</a>
                 </Link>
               </h2>
             </>
