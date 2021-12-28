@@ -5,8 +5,6 @@
     "next/core-web-vitals",
     "next",
     "prettier",
-    "plugin:@next/next/recommended",
-    "next",
-    "next/core-web-vitals"
+    "plugin:@next/next/recommended"
   ]
 }
