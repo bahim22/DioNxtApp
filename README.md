@@ -8,7 +8,6 @@
 ## Blog
 
 - `Template`
-  -   top-down
 - `Blog Posts`
   - component structure
   - css design structure
@@ -17,5 +16,4 @@
 - `Add API`
 - `Add external Links`
 
-### Deployed to Vercel @ https://dio-nxt-app.vercel.app/
-
+### Deployed to Vercel @ <https://dio-nxt-app.vercel.app/>

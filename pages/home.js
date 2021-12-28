@@ -1,14 +1,14 @@
 //import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Layout from "../components/layout.js";
+//import Layout from "../components/layout.js";
 //import styles from '*.module.css'
 import utilStyles from '../styles/utils.module.css'
 //import Sidebar from "../components/sidebar.js";
 import Content from '../components/content'
 import React from "react";
 //import NavTopOff from "../components/navi.js";
-import Footer from "../components/foot.js";
+//import Footer from "../components/foot.js";
 
 export default function Home() {
   return (

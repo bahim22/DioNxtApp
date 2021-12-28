@@ -25,7 +25,7 @@ export default function Layout({ children, home }){
             <>
               <Image
                 priority
-                src="/img/bg4.jpg"
+                src="/images/landing-bg.jpg"
                 className={utilStyles.card}
                 height={300}
                 width={300}
@@ -38,7 +38,7 @@ export default function Layout({ children, home }){
               <Link href="/">
                   <Image
                     priority
-                    src="public/images/Fam.JPG"
+                    src="/images/Dedd-full.jpg"
                     className={utilStyles.card}
                     height={200}
                     width={200}
@@ -47,7 +47,7 @@ export default function Layout({ children, home }){
               </Link>
               <h2 className={utilStyles.headingLg}>
                 <Link href="/">
-                  <a className={utilStyles.a}>Home Page</a>
+                  <a className='align-self-center'>Home Page</a>
                 </Link>
               </h2>
             </>

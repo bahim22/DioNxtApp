@@ -21,8 +21,8 @@ export default function Index({ allPostsData }){
       <section>
         <a className='headingLg'>Dionysus Era</a>< hr />
         <a>
-          Development | Design <p href="https://dionysusera.business.site">Business Site</p>
-        </a>
+          Development | Design
+        </a><p href="https://dionysusera.business.site">DED</p>
       </section>
       <section className={'${utilStyles.headingMd} ${utilStyles.padding1px}'}>
         <h2 className={utilStyles.headingLg}> DioBlog</h2>

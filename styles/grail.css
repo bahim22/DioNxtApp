@@ -1,0 +1,84 @@
+body {
+    min-width: 650px;
+    /* 2x LC width + RC width */
+}
+
+#contain {
+    padding-left: 200px;
+    /* LC width */
+    padding-right: 200px;
+    /* RC width */
+    overflow: hidden;
+}
+
+#contain .column {
+    position: relative;
+    float: left;
+    padding-bottom: 20010px;
+    /* X + padding-bottom (large # the browser wld ignore style at */
+    margin-bottom: -20000px;
+    /* X */
+}
+
+#ctr {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+#lft {
+    width: 180px;
+    padding: 0 10px;
+    /* LC width */
+    right: 240px;
+    margin-left: -100;
+    /*remove margin-left to neg so it goes under center main content
+    LC width */
+}
+
+#rght {
+    width: 180px;
+    /* RC width */
+    padding: 0 10px;
+    margin-right: -240px;
+    /*set margin-right to neg so it goes under center main content
+    RC width */
+}
+
+#ftr {
+    clear: both;
+    position: relative;
+}
+
+
+/*** IE6 Fix ***/
+
+* html #lft {
+    left: 180px;
+    /* RC width */
+}
+
+* html body {
+    overflow: hidden;
+}
+
+* html #ftr-wrapper {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10010px;
+    margin-bottom: -10000px;
+    background: #fff;
+    /* Same as body
+    background */
+}
+
+
+/* https://alistapart.com/article/holygrail/
+//The container div has a liquid center, fixed-width padding on side.
+<div id="header"></div><div id="container">
+<div id="center" class="column"></div>
+<div id="left" class="column"></div>
+<div id="right" class="column"></div></div><div id="footer"></div>
+//create the frame starting w/ header div, container dv, footer.
+//the css id #container pads width of lc & rc content
+*/
