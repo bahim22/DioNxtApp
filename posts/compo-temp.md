@@ -21,18 +21,18 @@ tags: ['reader', 'blog']
 
 | Type     | Use Case  | Completed | OS   |
 |------------|---------------|----------------|---------------------------|
-| React Boilerplate ⚛️ | Starter Project |  <ul><li>[x] Master 🏁 </li></ul> | [x] macOS ✔️ |
+| React Boilerplate ⚛️ | Starter Project | [x] Master 🏁 | [x] macOS ✔️ |
 
 ### App Info
 
 | **Build Info** | **Content**  | **Dependencies** |
 | ------------ | ----------------- | ----------------------------------------- |
-| Lib & Lang | `React` `JSX` `HTML` `CSS` `json`  | <ul><li>[x] completed </li> |
-| Config   | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Manager | <ul><li> [x] completed </li> |
-| UI/UX | `Bootstrap` `Tailwindcss` `React-Bootstrap` `SCSS SASS`| <ul><li> [ ] customizable</li></ul> |
-| Deployable | `Vercel` `Azure` `GitHub Pages` | Ship<ul><li>[ ] Build for Production </li></ul> |
-| Folders  | _Root, Src, Posts, Public_ |  [ ] customizable</li></ul> |
-| Outline  | _Components, Layout, Configuration, Testing_ | [x] completed </li> |
+| Lib & Lang | `React` `JSX` `HTML` `CSS` `json`  |[x] completed |
+| Config   | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Manager |  [x] completed|
+| UI/UX | `Bootstrap` `Tailwindcss` `React-Bootstrap` `SCSS SASS`| [ ] customizable |
+| Deployable | `Vercel` `Azure` `GitHub Pages` | Ship<[ ] Build for Production |
+| Folders  | _Root, Src, Posts, Public_ |  [ ] customizable|
+| Outline  | _Components, Layout, Configuration, Testing_ | [x] completed |
 
 ---
 
@@ -62,10 +62,10 @@ npm install
 
 | Projects   | Type | Version | Status   |
 |------------|---------------|----------------|----------|
-| `Dionysus Era`| Business Main Website | Editing & Styling | <ul><li> [ ] todo</li></ul> |
-| `Hima Balde`  | Personal Portfolio |  Final v 1 & Building v 2 | <ul><li>[x] done & [] 📋 </li></ul> |
-| `Inner Sity Market`| Marketing Business Website | Final v 2 | <ul><li>[x] done</li></ul> |
-| `ISM-DED` | e-commerce |  Work in progress | <ul><li>[ ] concept</li></ul> |
+| `Dionysus Era`| Business Main Website | Editing & Styling | [ ] todo|
+| `Hima Balde`  | Personal Portfolio |  Final v 1 & Building v 2 | [x] done & [] 📋 |
+| `Inner Sity Market`| Marketing Business Website | Final v 2 | [x] done|
+| `ISM-DED` | e-commerce |  Work in progress | [ ] concept |
 
 ###### `Aliases & Affiliations` [^2]
 
@@ -81,12 +81,6 @@ npm install
 - Inner Sity Market (ISM)
 - Dionysus Era Dev (DED)
 
----
-
-|__________________________________________________|
-
-| **DioNextApp** | _Hima Balde_ | **Dionysus Era**
-
 ## Blog
 
 - `Template`
@@ -99,4 +93,3 @@ npm install
 - `Add external Links`
 
 ### Deployed to Vercel @ <https://dio-nxt-app.vercel.app/>
-

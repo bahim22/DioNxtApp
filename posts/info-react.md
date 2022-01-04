@@ -98,7 +98,7 @@ babel-loader: Webpack loader that hooks Babel into webpack. We will run Babel fr
 - add babel info in the webpack.config.js file and configure
 - create `.babelrc` file and add presets and plugin configs
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+___
 
 ### EsLint
 
@@ -107,8 +107,7 @@ npm --save-dev install eslint eslint-loader babel-eslint eslint-config-react esl
 ```
 
 install dep then run eslint --init
-
-\\\\\\\\\\\\\\\\\\\\\\\\
+___
 
 ### Prettier
 
@@ -116,7 +115,7 @@ install dep then run eslint --init
 npm install
 ```
 
-\\\\\\\\\\\\\\\\\\\\\\\\
+___
 
 ### CSS
 

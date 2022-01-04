@@ -10,8 +10,7 @@ tags: 'web dev, jsx, tsx, mdx'
 
 ## Configuration File Information
 
-...
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+___
 
 ## CSS DESIGN
 
@@ -41,19 +40,14 @@ tags: 'web dev, jsx, tsx, mdx'
 - use named exports wj/ utility mods exporting multiple func
 - can only have one default exp. but several named exp.
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+___
 
-...
-
-...
-
-## WEBPACK config file
+### WEBPACK config file
 
 ```bash
 
 npm install webpack webpack-cli webpack-dev-server --save-dev
 npm install webpack webpack-cli --save-dev
-
 
 ```
 
@@ -73,14 +67,8 @@ module.exports = {
 > NPM
 
 - you can use `--save-dev` to seperate dev dep from production dep
-- j
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ### Package Descriptions
-
-| ------------------------------------------------------------------------- |
-| Packages Using in this Project | _____________________ **Description** |
 
 - `react` `react-dom` `prop-types` `react-router-dom`
 
@@ -107,9 +95,7 @@ module.exports = {
 - webpack-plugin-serve _dev server via local_
 - npm-run-all: _run several npm Rx concurrently or simul.._
 
-| ----------------------------------------------------------------- |
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-...
+---
 
 ### `HUSKY` `LINT` `PRETTIER`
 
@@ -119,13 +105,13 @@ module.exports = {
 `npm install` --save husky lint-staged prettier
 ```
 
+| Package |
 | ------------------------------------------------------------------ |
 `husky` allows githooks to be used in similar way to npm scripts
 `lint-staged` enables scripts to be run on git files that're staged
 `prettier` JS formatter
-| ------------------------------------------------------------------ |
 
-...
+___
 
 1. `add` code to scripts section of package.json
 
@@ -147,4 +133,4 @@ module.exports = {
     + },
     ```
 
-...
+___

@@ -64,14 +64,11 @@ my-app/
 #### Component Structure and Mapping
 
 ---
-| |
 
 1. Each File contains a 'child' component that is then exported
 2. The parent component imports the 'child' functions and creates a piece of UI
 3. The Layout file then combines the parent components into a meaningful design
 4. The Layout can have props and children to change state depending on the app's purpose
-
-| |
 
 ---
 
