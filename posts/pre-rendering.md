@@ -1,6 +1,10 @@
 ---
-title: 'Pre-rendering: DioNext'
-date: '2021-18-12'
+title: 'Styling'
+author: 'Ibrahima Balde'
+date: '2021-12-22'
+tags: ['next.js','blog', 'dionysusera']
+description: examples of Markdown options.
+tag: web dev
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

@@ -1,100 +1,102 @@
 ---
-title: 'Markdown Styling'
+title: 'Version Control and CI/CD'
 author: 'Ibrahima Balde'
-date: 2021/12/17
-description: examples of  Markdown options.
-tag: web dev
+date: '2021-12-17'
+description: 'tutorial on building a toolchain'
+tag: 'markdown'
+tags: ['reader', 'blog']
 ---
 
+## Next App Main Landing Page
 
-# Markdown Examples
+## `Dionysus Era Development (DED)`
 
-## h2 Heading
+---
 
-### h3 Heading
+## Repo Info
 
-#### h4 Heading
+| Title  | Date  | Author | Description   |
+|------------|---------------|----------------|-----------------------------------|
+| react-ded-boiler |  12/30/2021    | `Hima Balde` | Custom React App configured for WebPack & Babel |
 
-##### h5 Heading
+| Type     | Use Case  | Completed | OS   |
+|------------|---------------|----------------|---------------------------|
+| React Boilerplate ⚛️ | Starter Project |  <ul><li>[x] Master 🏁 </li></ul> | [x] macOS ✔️ |
 
-###### h6 Heading
+### App Info
 
-## Emphasis
+| **Build Info** | **Content**  | **Dependencies** |
+| ------------ | ----------------- | ----------------------------------------- |
+| Lib & Lang | `React` `JSX` `HTML` `CSS` `json`  | <ul><li>[x] completed </li> |
+| Config   | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Manager | <ul><li> [x] completed </li> |
+| UI/UX | `Bootstrap` `Tailwindcss` `React-Bootstrap` `SCSS SASS`| <ul><li> [ ] customizable</li></ul> |
+| Deployable | `Vercel` `Azure` `GitHub Pages` | Ship<ul><li>[ ] Build for Production </li></ul> |
+| Folders  | _Root, Src, Posts, Public_ |  [ ] customizable</li></ul> |
+| Outline  | _Components, Layout, Configuration, Testing_ | [x] completed </li> |
 
-**This is bold text**
+---
 
-_This is italic text_
+### Getting Started
 
-~~Strikethrough~~
-
-## Blockquotes
-
-> Develop. Preview. Ship. – Vercel
-
-## Lists
-
-Unordered
-
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Integer molestie lorem at massa
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-## Code
-
-Inline `code`
+``` bash
+git clone
+npm install
 
 ```
-export default function Nextra({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/feed.xml"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
-}
-```
 
-## Tables
+---
 
-| **Option** | **Description**                                                                                                             |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| First      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Second     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Third      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
+#### Web Development Info
 
-## Links
+`**Resources & Citation**`
 
-- [Next.js](https://nextjs.org)
-- [Nextra](https://nextra.vercel.app/)
-- [Vercel](http://vercel.com)
+> Links
 
-### Footnotes
+- [dev.to/iamismile](https://dev.to/iamismile/how-to-setup-webpack-and-babel-for-react-59ph/)
 
-- Footnote [^1].
-- Footnote [^2].
+- [dev.to/deadwing7x](https://dev.to/deadwing7x/setup-a-react-app-with-webpack-and-babel-4o3k)
 
-[^1]: Footnote **can have markup**
+##### `Deployed Projects` [^1]
 
-and multiple paragraphs.
+[^1]: Footnote [Next.js](https://nextjs.org) [Vercel](http://vercel.com)
 
-[^2]: Footnote text.
+| Projects   | Type | Version | Status   |
+|------------|---------------|----------------|----------|
+| `Dionysus Era`| Business Main Website | Editing & Styling | <ul><li> [ ] todo</li></ul> |
+| `Hima Balde`  | Personal Portfolio |  Final v 1 & Building v 2 | <ul><li>[x] done & [] 📋 </li></ul> |
+| `Inner Sity Market`| Marketing Business Website | Final v 2 | <ul><li>[x] done</li></ul> |
+| `ISM-DED` | e-commerce |  Work in progress | <ul><li>[ ] concept</li></ul> |
+
+###### `Aliases & Affiliations` [^2]
+
+[^2]: Footnote GitHub Profile **[`Hima-Balde`](https://github.com/bahim22)**
+
+>**Pseudonym/Nom de Guerre**
+
+- Bahim22
+- Dionysus
+
+>**Affiliations**
+
+- Inner Sity Market (ISM)
+- Dionysus Era Dev (DED)
+
+---
+
+|__________________________________________________|
+
+| **DioNextApp** | _Hima Balde_ | **Dionysus Era**
+
+## Blog
+
+- `Template`
+- `Blog Posts`
+  - component structure
+  - css design structure
+  - next app structure
+  - resources used
+- `Add API`
+- `Add external Links`
+
+### Deployed to Vercel @ <https://dio-nxt-app.vercel.app/>
+

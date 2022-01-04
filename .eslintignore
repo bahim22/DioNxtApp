@@ -1,6 +1,6 @@
 node_modules
 .next
-next-env.d.ts
+
 yarn.lock
 package-lock.json
 public
@@ -9,7 +9,6 @@ coverage
 /build/
 /test-config/
 .vscode
-!/.*
 **/.next/*
 *.json
 *.lock
