@@ -4,12 +4,12 @@ import { ListGroup, ListGroupItem, Navbar, NavDropdown, NavItem } from 'react-bo
 //import utilStyles from '../styles/utils.module.css'
 //import styles from './layout.module.css'
 import React from 'react'
-import Template from './template'
+//import Template from './template'
 //import {BsPrefixRefForwardingComponent} from 'react-bootstrap/esm/helpers'
 
 export default function Sidebar() {
   return (
-<main class='.main'>
+<main class='main'>
 <Navbar>
 <NavDropdown>
 <NavItem>
@@ -18,7 +18,7 @@ export default function Sidebar() {
     <li>
         <Link href="/" passHref>
             <MyButton />
-        </Link>
+        </Link>item 1
     </li>
     <li>
         <Link href="/home" passHref>
@@ -26,7 +26,7 @@ export default function Sidebar() {
         </Link>
     </li>
     <li>
-        <Link href="/base" passHref>
+        <Link href="/posts" passHref>
             <MyButton />
         </Link>
     </li>
@@ -35,7 +35,6 @@ export default function Sidebar() {
 </NavItem>
 </NavDropdown>
 </Navbar>
-<Template />
 </main>
   )
 }

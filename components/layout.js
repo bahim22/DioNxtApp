@@ -9,7 +9,7 @@ export const siteTitle = "Next Dionysus Era"
 
 export default function Layout({ children, home }){
     return (
-      <div className='.body'>
+      <div className='main'>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -56,7 +56,7 @@ export default function Layout({ children, home }){
           )}
         <main>{children}</main>
         {!home && (
-          <div>
+          <div className={utilStyles.card}>
             <Link href="/home">
               <a>Dionysus Era Main</a>
             </Link>

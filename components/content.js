@@ -5,6 +5,8 @@ import React from 'react'
 import Image from 'next/image'
 //import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
+import Layout from './layout'
+import Sidebar from './sidebar'
 //import { util } from 'prettier'
 //import Link from 'next/link'
 //import { Main } from 'next/document'
@@ -13,12 +15,12 @@ import utilStyles from '../styles/utils.module.css'
 //top half of the body section of each page to be passed props to change depending on what page it's called in. need to add styles and tailwind. has pics, cards w/ pic and text
 export default function Content() {
     return (
-      <div className={utilStyles.container}>
-        <section className={utilStyles.main}>
-        <h1 className={utilStyles.headingLg}>
-          Dio Era Dev | Design
-        </h1>
+      <Layout>
+      <Sidebar />
             <ul className={utilStyles.flex}>
+              <h1 className={utilStyles.headingLg}>
+                Dio Era Dev | Design
+              </h1>
                 <MImage />
                 <li className={utilStyles.listItem}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cupiditate optio exercitationem ratione eos illo minima beatae velit nam odit praesentium minus fugit nihil, expedita aliquam accusamus modi molestiae mollitia!
@@ -29,8 +31,7 @@ export default function Content() {
                 </li>
                 <MyImage />
             </ul>
-        </section>
-        </div>
+        </Layout>
     )
 }
 
