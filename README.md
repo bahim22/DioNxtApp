@@ -29,7 +29,7 @@
 ### Getting Started
 
 ``` bash
-git clone
+git clone https://github.com/bahim22/DioNxtApp.git
 npm install
 
 ```
@@ -46,7 +46,7 @@ npm install
 
 - [dev.to/deadwing7x](https://dev.to/deadwing7x/setup-a-react-app-with-webpack-and-babel-4o3k)
 
-##### `Deployed Projects` [^1]
+##### `Current Projects` [^1]
 
 [^1]: Footnote [Next.js](https://nextjs.org) [Vercel](http://vercel.com)
 
@@ -72,20 +72,3 @@ npm install
 - Dionysus Era Dev (DED)
 
 ---
-
-|__________________________________________________|
-
-| **DioNextApp** | _Hima Balde_ | **Dionysus Era**
-
-## Blog
-
-- `Template`
-- `Blog Posts`
-  - component structure
-  - css design structure
-  - next app structure
-  - resources used
-- `Add API`
-- `Add external Links`
-
-### Deployed to Vercel @ <https://dio-nxt-app.vercel.app/>
